@@ -27,7 +27,6 @@ public class F1 extends Car {
             this.changeGear(1);
         }
         //for all other cases, change the gear accordingly
-        //for all other cases, change the gear accordingly
         if(newSpeed > 0 && newSpeed<=50)
             this.changeGear(1);
         else if(newSpeed > 50 && newSpeed<=100)
@@ -40,6 +39,9 @@ public class F1 extends Car {
             this.changeGear(5);
         else if(newSpeed >250)
             this.changeGear(6);
+
+
+
         if(newSpeed > 0) {
             changeSpeed(newSpeed, getCurrentDirection());
         }
